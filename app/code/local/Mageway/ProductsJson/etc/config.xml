@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mageway_ProductsJson>
+            <version>0.1.0</version>
+        </Mageway_ProductsJson>
+    </modules>
+    <global>
+        <helpers>
+            <productsjson>
+                <class>Mageway_ProductsJson_Helper</class>
+            </productsjson>
+        </helpers>
+    </global>
+    <frontend>
+        <routers>
+            <productsjson>
+                <use>standard</use>
+                <args>
+                    <module>Mageway_ProductsJson</module>
+                    <frontName>productsjson</frontName>
+                </args>
+            </productsjson>
+        </routers>
+    </frontend>
+</config> 
